@@ -1,0 +1,264 @@
+/*my big blunder in this project is i use px instead of rem*/
+:root{
+    /*create variable we can use it throughout page*/
+    --border-radius:20px;
+}
+
+/*all element propertites applies*/
+*{
+    margin:0px;
+    padding:0px;
+    
+    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+body{
+background-color: black;
+}
+/*navigation bar styling */
+header{
+    color:whitesmoke;
+    max-width:auto;
+    height: 50px;
+    border: 2px outset rgb(180, 179, 179);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 2px 6px rgb(233, 6, 6);
+    font-size: larger;
+    text-shadow: 0px 0px 2px rgb(228, 220, 220);
+backdrop-filter: blur(5px);
+
+}
+a:hover{
+    text-align: center;
+    transition: 2s;
+    border-radius: 10px;
+    border:1px dotted rgb(0,255,13);
+    color:rgb(0, 255, 13);
+
+}
+a{
+    text-decoration: none;
+    color:whitesmoke;
+}
+#icon-div>ul>li{
+    position: relative;
+    display: inline-block;
+    margin-right:10px ;
+}
+#icon{
+    border:2px outset red;
+    border-radius: 50%;;
+    width:50px;
+    height: 50px;
+}
+#navigation-div>ul>li{
+    display: inline-flex;
+    margin-right: 30px;
+}
+#sign-div>ul>li{
+    margin-left:10px ;
+    margin-right: 5px;
+    display: inline-flex;
+}
+#sign{
+    display: flex;
+    border-radius: 10px;
+    width:80px;
+    height: 30px;
+    background-color: rgb(255, 0, 191);
+    justify-content: center;
+}
+/*header end*/
+/*cv Start */
+ #set-center{
+    display: flex;
+    justify-content: center;
+ }
+/*cv images changes*/
+#cv-image-div>img{
+    height:100px;
+    width:100px;
+    border-radius: 50%;
+    border: 2px outset red;
+}
+/*CV form size and flex*/
+#cv-div{
+    margin-top: 40px;
+   
+    position: relative;
+    display: flex;
+    border:2px outset red;
+    width:800px;
+    height: 900px;
+    box-shadow:5px 5px 20px gold,0px 0px 15px gold;
+    
+    
+}
+/* Cv image title and caption container */
+#cv-image-div{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+/* under the cv iamge container header 3 font styling*/
+#cv-image-div>h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200;
+}
+/* cv main content like name,address,contectand skills styling*/
+#cv-main{
+    
+    color:whitesmoke;
+    background-color: black;
+    width:300px;
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    
+    border:2px outset gold;
+}#contect-div>a{
+    display: flex;
+    align-items: center;
+}
+a>img{
+    border-radius: 50%;
+    background-color: whitesmoke;
+    width:30px;
+}
+a:hover img{
+    background-color: rgb(24, 228, 24);
+}
+.skills-list{
+    margin-left: 20px;
+}
+#contect-1{
+
+    color:rgb(19,247,19);
+}
+
+#contect-2{
+    margin-left: 5px;
+    font-size: 20px;
+    color:rgb(19, 247, 19);
+}
+#contect-2:hover{
+color:rgb(72, 255, 0);
+}
+#contect-div>a{
+    text-align: center;
+}
+/*this styling for cv form aside section */
+#aside-sec{
+    color:black;
+    border:2px outset gold;
+    width:495px;
+    background-color:whitesmoke;
+    
+}
+/*this styling for aside section under the article paragraph strong element*/
+#aside-sec>article>p>strong{
+font-size: 15px;
+}
+/*this styling for key strength*/
+ol>li{
+    list-style:circle;
+    margin-left: 20px;
+}
+/*this styling for pdf lab munual */
+#pdf-link{
+    color:blue;
+}
+progress{
+    width:250px;
+    background-color: gold;
+}
+footer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:15px 0px 0px 0px;
+    color:whitesmoke;
+}
+#footer-location{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+#F{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+#F>div>a>img{
+    width: 150px;
+}
+
+
+
+
+@media only screen and (max-device-width:600px){
+  header{
+    width:100%;
+    font-size: 25px;
+    height:60px;
+  }
+  #icon-div>ul>li>img{
+    display: none;
+  }
+  #icon-div>ul>li>h1{
+    font-size: 30px;
+  }
+  #navigation-div>ul>li{
+    display: none;
+  }
+  #sign-div>ul>li{
+    display: none;
+  }
+  #cv-div{
+    width:600px;
+  }
+ #cv-main{
+    width:230px;
+ }
+ #aside-sec{
+    width:370px;
+ }
+ progress{
+    width:130px;
+ } 
+}
+@media only screen and (max-device-width:900px){
+    header{
+        width:vw;
+        font-size: 30px;
+        height:60px;
+      }
+      #icon-div>ul>li>img{
+        display: none;
+      }
+      #icon-div>ul>li>h1{
+        font-size: 30px;
+      }
+      #sign-div>ul>li{
+        display: none;
+      }
+      #cv-div{
+        width:600px;
+      }
+     #cv-main{
+        width:230px;
+     }
+     #aside-sec{
+        width:370px;
+     }
+     progress{
+        width:130px;
+     } 
+    }
+    
